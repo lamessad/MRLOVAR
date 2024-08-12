@@ -1,0 +1,19 @@
+Package: MRLOVAR
+Type: Package
+Title: Mendelian Randomization
+Version: 0.1.0
+Authors@R: c(person("Hong", "Lee", role = c("aut","cph"),email = "Hong.Lee@unisa.edu.au"),
+             person("Lamessa", "Amente", role = c("aut", "cre","cph"), email = "dubelamessa@gmail.com"))
+Maintainer: Your Name <your.email@domain.com>
+Description: This function conducts Mendelian randomization analysis based on latent phenotype of the outcome that explicitly exclude vertical pleiotropy effects when there is dependence between the instrumental variants.
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    snpStats,
+    utils,
+    methods
+Depends:
+    R (>= 3.5.0)
