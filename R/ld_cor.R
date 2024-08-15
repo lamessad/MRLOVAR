@@ -37,7 +37,7 @@ ld_cor <- function(plink2_path, bfile, gwas_sumdata, thread = 80) {
 
   # Calculate LD matrix
   d_value <- ncol(p_data$genotypes) - 1
-  ld_matrix <- ld(p_data$genotypes, depth = d_value, stats = c("R"), symmetric = TRUE)
+  ld_matrix <- ld(p_data$genotypes, depth = d_value, stats = c("D.prime", "R", "R.squared", "Q", "OR"), symmetric = TRUE)
   ld_cor <- as.matrix(ld_matrix$R)
   diag(ld_cor) <- 1
 
